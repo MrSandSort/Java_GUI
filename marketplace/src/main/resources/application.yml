@@ -1,0 +1,21 @@
+spring:
+  application: marketplace
+  datasource:
+    url: jdbc:postgresql://localhost:5432/marketplace
+    username: mpuser
+    password: mppass
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+  jackson:
+    serialization.WRITE_DATES_AS_TIMESTAMPS: false
+
+server:
+  port: 9090
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
